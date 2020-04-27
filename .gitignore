@@ -6,3 +6,4 @@ devos3d/data/dhm_lamb_10m.tfw
 *.JPG
 *.jpg
 *.exf
+.DS_Store
