@@ -1,0 +1,136 @@
+{
+	"tags": [{
+			"key":0,
+			"name": "DSS-STPK-V (DSS Stützpunkt vermessen)",
+			"kurztext": "DSS-STPK-V",
+			"type": "foto",
+			"nr": 0
+		}, {
+			"key":1,
+			"name": "DSS-STPK-B (DSS Stützpunkt bohren)",
+			"kurztext": "DSS-STPK-B",
+			"type": "foto",
+			"nr": 1
+		}, {
+			"key":2,
+			"name": "DSS-STPK-A (DSS Stützpunkt Anker versetzen)",
+			"kurztext": "DSS-STPK-A",
+			"type": "foto",
+			"nr": 2
+		}, {
+			"key":3,
+			"name": "DSS-AZV (DSS Stützpunkt Bolzen Belastungsprüfung)",
+			"kurztext": "DSS-AZV",
+			"type": "foto",
+			"nr": 3
+		}, {
+			"key":4,
+			"name": "DSS-H (DSS Stützpunkt Hängesäule montieren)",
+			"kurztext": "DSS-H",
+			"type": "foto",
+			"nr": 4
+		}, {
+			"key":5,
+			"name": "DSS-T (DSS Stützpunkt Tragwerk montieren)",
+			"kurztext": "DSS-T",
+			"type": "foto",
+			"nr": 5
+		},  {
+			"key":6,
+			"name": "DSS-KP (DSS Stützpunkt-Kontrolle lt. Prüfplan)",
+			"kurztext": "DSS-KP",
+			"type": "foto",
+			"nr": 6
+		}, {
+			"key":7,
+			"name": "DSS-DILA (DSS Dilatation einbauen)",
+			"kurztext": "DSS-DILA",
+			"type": "foto",
+			"nr": 7
+		}, {
+			"key":8,
+			"name": "DSS-FP (DSS Festpunkt einbauen)",
+			"kurztext": "DSS-FP",
+			"type": "foto",
+			"nr": 8
+		}, {
+			"key":9,
+			"name": "DSS-TR (DSS Trenner einbauen)",
+			"kurztext": "DSS-TR",
+			"type": "foto",
+			"nr": 9
+		}, {
+			"key":10,
+			"name": "SCH (DSS Schalter montieren)",
+			"kurztext": "SCH",
+			"type": "foto",
+			"nr": 10
+		}, {
+			"key":11,
+			"name": "MAST (Mast stellen)",
+			"kurztext": "MAST",
+			"type": "foto",
+			"nr": 11
+		}, {
+			"key":12,
+			"name": "VORM (Vormontage Bef.-Teile am Mast)",
+			"kurztext": "VORM",
+			"type": "foto",
+			"nr": 12
+		}, {
+			"key":13,
+			"name": "RINGE (Ringerdung verlegen)",
+			"kurztext": "RINGE",
+			"type": "foto",
+			"nr": 13
+		}, {
+			"key":14,
+			"name": "QS-E (Querschlagerdung verlegen)",
+			"kurztext": "QS-E",
+			"type": "foto",
+			"nr": 14
+		}, {
+			"key":15,
+			"name": "ERDE (Erdung verlegen)",
+			"kurztext": "ERDE",
+			"type": "foto",
+			"nr": 15
+		}, {
+			"key":16,
+			"name": "FUNK-STPK-V (Funk Stützpunkt vermessen)",
+			"kurztext": "FUNK-STPK-V",
+			"type": "foto",
+			"nr": 16
+		}, {
+			"key":17,
+			"name": "FUNK-STPK-B (Funk Stützpunkt bohren)",
+			"kurztext": "FUNK-STPK-B",
+			"type": "foto",
+			"nr": 17
+		}, {
+			"key":18,
+			"name": "FUNK-STPK-A (Funk Stützpunkt Anker versetzen)",
+			"kurztext": "FUNK-STPK-A",
+			"type": "foto",
+			"nr": 18
+		}, {
+			"key":19,
+			"name": "FUNK-AZV (Funk Stützpunkt Bolzen Belastungsprüfung)",
+			"kurztext": "FUNK-AZV",
+			"type": "foto",
+			"nr": 19
+		}, {
+			"key":20,
+			"name": "FUNK-STPK-T (Funk Stützpunkt Tragwerk montieren)",
+			"kurztext": "FUNK-STPK-T",
+			"type": "foto",
+			"nr": 20
+		}, {
+			"key":21,
+			"name": "FUNK-KP (Funk Stützpunkt-Kontrolle lt. Prüfplan)",
+			"kurztext": "FUNK-KP",
+			"type": "foto",
+			"nr": 21
+		}
+	]
+}

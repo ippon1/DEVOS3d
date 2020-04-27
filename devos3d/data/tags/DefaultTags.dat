@@ -1,0 +1,40 @@
+{
+	"tags": [{
+			"key":0,
+			"name": "UEPR (Überprüfung)",
+			"kurztext": "UEPR",
+			"type": "foto",
+			"nr": 0
+		}, {
+			"key":1,
+			"name": "MESS (Vermessung)",
+			"kurztext": "MESS",
+			"type": "foto",
+			"nr": 1
+		}, {
+			"key":2,
+			"name": "MONT (Montage)",
+			"kurztext": "MONT",
+			"type": "foto",
+			"nr": 2
+		}, {
+			"key":3,
+			"name": "DEMONT (Demontage)",
+			"kurztext": "DEMONT",
+			"type": "foto",
+			"nr": 3
+		}, {
+			"key":4,
+			"name": "DOKU (Dokumentation)",
+			"kurztext": "DOKU",
+			"type": "foto",
+			"nr": 4
+		}, {
+			"key":5,
+			"name": "DIV (Diverses)",
+			"kurztext": "DIV",
+			"type": "foto",
+			"nr": 5
+		}
+	]
+}

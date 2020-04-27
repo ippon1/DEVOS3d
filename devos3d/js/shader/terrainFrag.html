@@ -1,0 +1,67 @@
+<script type="x-shader/x-fragment" id="terrainFrag">
+    varying vec2 vUv;
+    varying float Thickness;
+
+
+    varying mat3 NormalMatrix;
+    varying vec3 ambient;
+    varying vec3 diffuse;
+    varying vec3 spec;
+    varying vec3 LightIntensity;
+
+    // https://www.gamedev.net/articles/programming/graphics/the-basics-of-glsl-40-shaders-r2861
+    // https://stackoverflow.com/questions/17537879/in-webgl-what-are-the-differences-between-an-attribute-a-uniform-and-a-varying
+    // source: https://stackoverflow.com/questions/15276454/is-it-possible-to-draw-line-thickness-in-a-fragment-shader#19212122
+    float drawLine(vec2 p1, vec2 p2) {
+        //vec2 uv = gl_FragCoord.xy / resolution.xy;
+        vec2 uv = vUv;
+
+        float a = abs(distance(p1, uv));
+        float b = abs(distance(p2, uv));
+        float c = abs(distance(p1, p2));
+
+        if ( a >= c || b >=  c ){
+            return 0.0;
+        }
+
+        float p = (a + b + c) * 0.5;
+
+        // median to (p1, p2) vector
+        float h = 2.0 / c * sqrt( p * ( p - a) * ( p - b) * ( p - c));
+
+        return mix(1.0, 0.0, smoothstep(0.5 * Thickness, 1.5 * Thickness, h));
+    }
+    void main() {
+        //vec4 baseColor = vec4(0.82,0.7,0.54, 1.0); // brown
+        //vec4 baseColor = vec4(0.0,0.0,0.0,0.0);
+        //float eins = drawLine(vec2(0.1, 0.1), vec2(0.1, 0.9));
+        //float zwei = drawLine(vec2(0.1, 0.9), vec2(0.7, 0.5));
+        //float drei = drawLine(vec2(0.1, 0.1), vec2(0.7, 0.5));
+        //float maxValue = max( max( eins, zwei ), drei );
+
+        //vec4 lineColor = vec4( max(maxValue, baseColor.x), max(maxValue, baseColor.y) , max(maxValue, baseColor.z) , 1.0 );
+        //gl_FragColor = lineColor;
+
+        gl_FragColor = vec4(
+          max(
+            max(
+              drawLine(vec2(0.1, 0.1), vec2(0.1, 0.9)),
+              drawLine(vec2(0.1, 0.9), vec2(0.7, 0.5))),
+            drawLine(vec2(0.1, 0.1), vec2(0.7, 0.5))))*LightIntensity.x/LightIntensity.y;
+    }
+
+
+</script>
+<!-- old shader:
+<script type="x-shader/x-fragment" id="terrainFrag">
+    //uniform float side;
+    uniform float heightMap[2]; // can only store arrays to smaller size
+
+    varying vec2 vUv;
+
+    void main() {
+        vec2 p = vUv;
+        vec4 color = vec4(1.0,0.0,1.0,1.0);
+        gl_FragColor = color;
+    }
+</script>-->

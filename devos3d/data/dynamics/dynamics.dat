@@ -1,0 +1,16 @@
+{
+	"functions": {
+		"function_1": {
+			"key": 1,
+			"id": "DemoTemplate",
+			"type": "javascript",
+			"description": "Demo-Funktion zur Dynamisierung des TestTemplates",
+			"code": "var load=Math.round(Number(BINDINGS.DATEN_LOAD[BINDINGS.DT_PLAYER_VALUE_INDEX])); var speed=Math.round(Number(BINDINGS.DATEN_SPEED[BINDINGS.DT_PLAYER_VALUE_INDEX])); var loadTextElement=BINDINGS.DOCUMENT.getElementById('LOADTEXT_'+BINDINGS.OBJEKT_KEY);loadTextElement.textContent=load; var speedTextElement=BINDINGS.DOCUMENT.getElementById('SPEEDTEXT_'+BINDINGS.OBJEKT_KEY);speedTextElement.textContent=speed; var loadElement=BINDINGS.DOCUMENT.getElementById('LOAD_'+BINDINGS.OBJEKT_KEY); if(load<10){loadElement.setAttribute('opacity',0);}else{loadElement.setAttribute('opacity',1);} if(load>=10&&load<95){loadElement.setAttribute('class','cls-31');}else if(load>=95&&load<105){loadElement.setAttribute('class','cls-32');}else if(load>=105&&load<110){loadElement.setAttribute('class','cls-33');}else if(load>=110&&load<130){loadElement.setAttribute('class','cls-34');}else{loadElement.setAttribute('class','cls-35');}",
+			"nr": 1,
+			"eventKey": null
+		}
+	},
+	"events": {
+		
+	}
+}

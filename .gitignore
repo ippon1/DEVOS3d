@@ -1,0 +1,8 @@
+.idea/
+.devos3d/data/
+devos3d/data/dhm_lamb_10m.tfw
+*.tif
+*.osm
+*.JPG
+*.jpg
+*.exf

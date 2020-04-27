@@ -1,0 +1,37 @@
+body
+{
+    padding:0px;
+    margin:0px;
+}
+
+#threeDiv
+{
+    left:0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    position:fixed;
+}
+
+#saveLogBtn
+{
+    position:fixed;
+    z-index:1000;
+    top:0.25em;
+    right:1em;
+    color:blue;
+}
+#fullScreenBtn
+{
+    position:fixed;
+    z-index:1000;
+    top:0.25em;
+    right:3em;
+    color:blue;
+}
+
+#threeCanvas
+{
+    width:100%;
+    height:100%;
+}
